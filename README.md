@@ -11,7 +11,7 @@ two esp32 cameras
 
 192.168.1.50  has an ftp upload script to lrio every 5 minutes /home/ftpU/birdbox
 
-192.168.1.7
+192.168.1.7 has the standard esp32 streaming webserver installed
 
 
 
