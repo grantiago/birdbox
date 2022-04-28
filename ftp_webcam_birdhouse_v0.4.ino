@@ -20,7 +20,7 @@ const char* ssid = "cfax2";
 const char* password = "carljasper";
 char ftp_server[] = "45.79.67.215";
 char ftp_user[]   = "ftpWebcam";
-char ftp_pass[]   = "#CarlJasper2#";
+char ftp_pass[]   = "";
 char* ftp_path = "/birdbox/";
 
 WiFiUDP ntpUDP;
