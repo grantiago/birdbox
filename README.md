@@ -13,5 +13,5 @@ two esp32 cameras
 
 192.168.1.7 has the standard esp32 streaming webserver installed
 
-
+http://192.168.1.7:81/stream the stream without clicking on the start stream.
 
