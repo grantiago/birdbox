@@ -17,7 +17,7 @@
 
 const char* standBy = "5 minutes";
 const char* ssid = "cfax2";
-const char* password = "carljasper";
+const char* password = "";
 char ftp_server[] = "45.79.67.215";
 char ftp_user[]   = "ftpWebcam";
 char ftp_pass[]   = "";
