@@ -17,16 +17,16 @@ http://192.168.1.7:81/stream the stream without clicking on the start stream.
 
 the esp32 video is identified by ffmpeg as follows: 
  
- Stream #0:0: Video: mjpeg (Baseline), 
+Stream #0:0: Video: mjpeg (Baseline), 
  
- yuvj422p(pc, bt470bg/unknown/unknown), 
+yuvj422p(pc, bt470bg/unknown/unknown), 
  
- 800x600 [SAR 1:1 DAR 4:3], 
+800x600 [SAR 1:1 DAR 4:3], 
  
- 9.90 fps, 
+9.90 fps, 
  
- 9.90 tbr, 
+9.90 tbr, 
  
- 90k tbn, 
+90k tbn, 
  
- 90k tbc
+90k tbc
