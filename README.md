@@ -1,19 +1,27 @@
-# birdbox
-kestrel box with webcam streaming and gallery with piwigo
-
-or maybe just a dedicated php gallery. 
-
-http upload and gallery https://randomnerdtutorials.com/esp32-cam-post-image-photo-server/
-
-[long range wifi](https://www.hackster.io/news/long-range-wifi-for-the-esp32-9429ab89f450)
+## kestrel box
+kestrel box with esp32 cam streaming to youtube 
 
 two esp32 cameras
 
-192.168.1.50  has an ftp upload script to lrio every 5 minutes /home/ftpU/birdbox
+#### cam50
+192.168.1.50  installed sketch E14  rtsp stream suitable for youtube
+[source rtsp tutorial](https://www.hackster.io/BnBe_Club/9-rtsp-video-streamer-using-the-esp32-cam-board-8832b4)
+prints the rtsp url on the serial screen. in my case rtsp://192.168.1.50:8554/mjpeg/1
+remember!! only one client at a time. this error -- Invalid data found when processing input
+means you are connected with VLC or another client. 
 
-192.168.1.7 has the standard esp32 streaming webserver installed
+#### cam7
+<strike>
 
-http://192.168.1.7:81/stream the stream without clicking on the start stream.
+```
+  192.168.1.7 has the standard esp32 streaming webserver installed dead. 
+  I shorted this on connecting the leads. Whoops.
+```
+
+</strike>
+
+for the example esp32 webserver stream from the arduino ide examples over http 
+http://192.168.x.xx:81/stream the stream without clicking on the start stream.
 
 the esp32 video is identified by ffmpeg as follows: 
 
@@ -24,3 +32,9 @@ yuvj422p(pc, bt470bg/unknown/unknown),
 9.90 tbr,  
 90k tbn,  
 90k tbc  
+
+#### useful sources:
+http upload and gallery https://randomnerdtutorials.com/esp32-cam-post-image-photo-server/
+
+[long range wifi](https://www.hackster.io/news/long-range-wifi-for-the-esp32-9429ab89f450)
+
