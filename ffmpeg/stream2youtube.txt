@@ -1,14 +1,29 @@
 # for youtube livestream -- not working
+https://stackoverflow.com/questions/39660547/how-to-live-stream-youtube-without-audio
+
+this one works on youtube
 ffmpeg \
- -v verbose \
- -rtsp_transport tcp -i \
- rtsp://192.168.1.50:8554/mjpeg/1 \
- -vf yadif,format=yuv422p \
- -force_key_frames "expr:gte(t,n_forced/2)" \
- -c:v libx264 \
- -crf 18 -bf 2 \
- -c:a aac -q:a 1 -ac 2 -ar 48000 \
- -f flv rtmp://a.rtmp.youtube.com/live2/7zdg-tqvb-fhaz-yaq6-03s0
+ -re \
+ -rtsp_transport tcp \
+ -i rtsp://192.168.1.50:8554/mjpeg/1 \
+ -f lavfi \
+ -i anullsrc \
+ -pix_fmt yuv420p \
+ -profile:v baseline \
+ -s 426x240 \
+ -bufsize 2048k \
+ -vb 400k \
+ -maxrate 800k \
+ -deinterlace \
+ -vcodec libx264 \
+ -preset medium \
+ -g 30 \
+ -r 30 \
+ -acodec libmp3lame \
+ -ar 44100 \
+ -b:a 128k \
+ -strict experimental \
+ -f flv rtmp://a.rtmp.youtube.com/live2/<key>
 
 
 # this creates a series of ts files with the index stream.m3u8
