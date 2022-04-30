@@ -17,7 +17,9 @@ YOUTUBE_URL="rtmp://a.rtmp.youtube.com/live2" # Base YouTube RTMP URL
 VBR="5200k" # Bitrate
 
 args()
+#args+=('-hide_banner')
 args+=('-re')
+args+=('-thread_queue_size 512') 
 args+=('-rtsp_transport tcp')
 args+=('-i rtsp://192.168.1.50:8554/mjpeg/1')
 args+=('-f lavfi')
@@ -36,6 +38,8 @@ args+=('-r 30')
 args+=('-acodec libmp3lame')
 args+=('-ar 44100')
 args+=('-b:a 128k')
+args+=('-use_editlist 0') 
+args+=('-flvflags no_duration_filesize') # nope failed to update header ...
 args+=('-strict experimental')
 args+=('-f flv' $YOUTUBE_URL/$STREAM_KEY)
 
