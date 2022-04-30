@@ -3,7 +3,8 @@
 # for youtube livestream 
 # https://stackoverflow.com/questions/39660547/how-to-live-stream-youtube-without-audio
 # script template here: 
-# https://www.nemdub.com/video-live-stream-on-youtube-from-a-raspberry-pi ubuntu lamp stack 
+# https://www.nemdub.com/video-live-stream-on-youtube-from-a-raspberry-pi 
+# ubuntu 20. lamp stack 
 #########
 
 STREAM_KEY="key" # YouTube Stream Key
@@ -18,12 +19,13 @@ VBR="5200k" # Bitrate
 
 args()
 #args+=('-hide_banner')
+#args+=('-loglevel debug')
 args+=('-re')
 args+=('-thread_queue_size 512') 
 args+=('-rtsp_transport tcp')
 args+=('-i rtsp://192.168.1.50:8554/mjpeg/1')
-args+=('-f lavfi')
-args+=('-i anullsrc')
+args+=('-f lavfi') # this makes it work on youtube. youtube requires an audio channel 
+args+=('-i anullsrc') # this makes it work on youtube as well. fake audio channel
 args+=('-pix_fmt yuv420p')
 args+=('-profile:v baseline')
 args+=('-s 426x240')
