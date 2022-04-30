@@ -1,3 +1,5 @@
+[complete flags list] (https://gist.github.com/tayvano/6e2d456a9897f55025e25035478a3a50)
+
 | flag         | desc     |
 |--------------|-----------|
 **-formats**|   print the list of supported file formats
