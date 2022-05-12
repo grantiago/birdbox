@@ -41,3 +41,5 @@ The esp32 video is identified by ffmpeg as follows:
 http upload and gallery https://randomnerdtutorials.com/esp32-cam-post-image-photo-server/   
 [long range wifi](https://www.hackster.io/news/long-range-wifi-for-the-esp32-9429ab89f450)
 
+https://randomnerdtutorials.com/telegram-esp32-motion-detection-arduino/
+
