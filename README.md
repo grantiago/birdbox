@@ -13,12 +13,11 @@ https://www.youtube.com/watch?v=O4uBGZ0VhBM
 
 This is under development. It's live condition may be dead. 🐦  
 
-#### cam7
+#### cam 234
 
-~~192.168.1.7 has the standard esp32 streaming webserver installed dead. 
-  I shorted this on connecting the leads. Whoops.~~
+192.168.1.234
 
-
+#### the arduino example streamer: 
 for the example esp32 webserver stream from the arduino ide examples over http 
 http://192.168.x.xx:81/stream the stream without clicking on the start stream.
 
