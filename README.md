@@ -15,7 +15,7 @@ prints the rtsp url on the serial screen. in my case rtsp://192.168.1.50:8554/mj
 remember!! only one client at a time. this error -- Invalid data found when processing input   
 means you are connected with VLC or another client.   
 
-[some video of my desk as I tested the sketch](the https://www.youtube.com/watch?v=O4uBGZ0VhBM)
+[some video of my desk as I tested the sketch](https://www.youtube.com/watch?v=O4uBGZ0VhBM)
 
 This is under development. It's live condition may be dead. 🐦  
 
