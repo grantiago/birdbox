@@ -1,11 +1,9 @@
 ## Kestrel Box Counter
 
 * version 0.1.1 
-* 2023-05-01
-* 2023 
-* modified and adapted grantamaral@gmail.com
-* added pir sensor 0.1
-* added wifi reconnect  0.1
+* 2023-05-01 -- modified and adapted grantamaral@gmail.com
+* 0.1 - added pir sensor
+* 0.1 - added wifi reconnect
 * https://github.com/grantiago/kestrel_box/counter
 * adapted from: Rui Santos https://RandomNerdTutorials.com/esp32-esp8266-mysql-database-php/
 
