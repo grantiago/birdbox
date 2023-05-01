@@ -1,8 +1,21 @@
 ## Kestrel Box Counter
 
+* version 0.1.1 
+* 2023-05-01
+* 2023 
+* modified and adapted grantamaral@gmail.com
+* added pir sensor 0.1
+* added wifi reconnect  0.1
+* https://github.com/grantiago/kestrel_box/counter
+* adapted from: Rui Santos https://RandomNerdTutorials.com/esp32-esp8266-mysql-database-php/
+
 ## Concept
 
-Esp32 cam box entry counter. From a post on [peregrinfund.org](https://hub.peregrinefund.org/forum/akp-general-discussion/kestrel-box-entry-counter) using an esp32 board and a PIR sensor to detect entries on the kestral box. It could be done on a esp32 dev board. But if you are going to stick a board in the box, you might as well include a camera.
+Esp32 cam box entry counter. From a post on [peregrinfund.org](https://hub.peregrinefund.org/forum/akp-general-discussion/kestrel-box-entry-counter) 
+
+Using an esp32 board and a PIR sensor to detect entries on the kestral box. It could be done on a esp32 dev board. But if you are going to stick a board in the box, you might as well include a camera. 
+
+Solar power connected to a "pass-through charging" capable powerbank. 
 
 ### Requirements
 
