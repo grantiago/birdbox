@@ -2,6 +2,7 @@
 
 * version 0.1.1 
 * 2023-05-01 -- modified and adapted grantamaral@gmail.com
+* as-is-license 2023
 * 0.1 - added pir sensor
 * 0.1 - added wifi reconnect
 * https://github.com/grantiago/kestrel_box/counter
