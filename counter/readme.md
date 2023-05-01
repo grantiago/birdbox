@@ -15,6 +15,8 @@ Using an esp32 board and a PIR sensor to detect entries on the kestral box. It c
 
 Solar power connected to a "pass-through charging" capable powerbank. 
 
+this is a v. 1 mockup. At some time you will want to solder everything togethere neat and tidy on a PCB board and enclose it in a box of some sort. Tupperware == gettoware. 
+
 ### Requirements
 
 * kestral box
@@ -39,3 +41,36 @@ Solar power connected to a "pass-through charging" capable powerbank.
 * post_esp_data.php -- process and enter the http post from the board into a mysql db.
 * esp_data.php -- retrieve the data from the db and display it on an http page available to the public (or not).
 * counter.sql -- create the table on the database to store the data.
+
+the pinout. I struggled with this. 
+
+<img src="https://raw.githubusercontent.com/grantiago/kestrel_box/main/counter/images/counter_pinout.png" alt="pinout. led is optional" title="pinout" width="360px" height="250px">
+
+The working circuit.
+
+<img src="https://raw.githubusercontent.com/grantiago/kestrel_box/main/counter/images/working_circuit.jpg" alt="circuit" title="circuit" width="360px" height="250px">
+
+The public facing webpage.
+
+<img src="https://raw.githubusercontent.com/grantiago/kestrel_box/main/counter/images/web_page.png" alt="web page" title="web page" width="360px" height="370px">
+
+- [ ] todo 
+- [ ] add a daily total to the webpage. for another day. 
+
+```
+mysql> SELECT     DATE(`reading_time`) AS 'day',  
+COUNT(*) AS 'number_of_entries', 
+location 
+FROM `SensorData` 
+GROUP BY DATE(`reading_time`);
+
++------------+-------------------+-----------+
+| day        | number_of_entries | location  |
++------------+-------------------+-----------+
+| 2023-05-01 |                55 | Office    |
+| 2023-04-29 |                 1 | hill road |
+| 2023-04-30 |                 2 | hill road |
++------------+-------------------+-----------+
+3 rows in set (0.00 sec)
+
+```
