@@ -31,6 +31,8 @@ this is a v. 1 mockup. At some time you will want to solder everything togethere
 * PIR sensor $9
 * Solar Panel [amazon quick search](<https://www.amazon.com/dp/B09CYWCCCY/ref=vp_d_ac_d_vp_sub_hr_lb_reg_pd?_encoding=UTF8&th=1>) $23
 * Power Bank [amazon](https://www.amazon.com/EnergyQC-Pilot-X7-Portable-Flashlight/dp/B09Z6R1TZG/?_encoding=UTF8&th=1) $24 Has to be capable of charging and discharging simultaniously.
+* jumpers
+* resistor
 
     total: ~$74
 
@@ -50,12 +52,16 @@ The working circuit.
 
 <img src="https://raw.githubusercontent.com/grantiago/kestrel_box/main/counter/images/working_circuit.jpg" alt="circuit" title="circuit" width="360px" height="250px">
 
-The public facing webpage.
+The public facing webpage. The sensor values are arbitrary values I generated at random. A temp humidity sensor could easily be plugged in here. 
 
 <img src="https://raw.githubusercontent.com/grantiago/kestrel_box/main/counter/images/web_page.png" alt="web page" title="web page" width="360px" height="370px">
 
-- [ ] todo 
-- [ ] add a daily total to the webpage. for another day. 
+- [ ] todo ✔️
+- [ ] add a daily total to the webpage. for another day.
+- [ ] graph it with highcharts 📈
+- [ ] add a temperature sensor 🌡️
+- [ ] add the camera module and http post upload
+- [ ] add a http gallery. 📷
 
 ```
 mysql> SELECT     DATE(`reading_time`) AS 'day',  
