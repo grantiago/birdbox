@@ -15,7 +15,7 @@ Using an esp32 board and a PIR sensor to detect entries on the kestral box. It c
 
 Solar power connected to a "pass-through charging" capable powerbank. 
 
-this is a v. 1 mockup. At some time you will want to solder everything togethere neat and tidy on a PCB board and enclose it in a box of some sort. Tupperware == gettoware. 
+this is a v. 0.1 mockup. At some time you will want to solder everything together, neat and tidy, on a PCB board and enclose it in a box of some sort. Tupperware == ghett-o-ware. 
 
 ### Requirements
 
@@ -44,7 +44,7 @@ this is a v. 1 mockup. At some time you will want to solder everything togethere
 * esp_data.php -- retrieve the data from the db and display it on an http page available to the public (or not).
 * counter.sql -- create the table on the database to store the data.
 
-the pinout. I struggled with this. 
+The pinout. I struggled with this. 
 
 <img src="https://raw.githubusercontent.com/grantiago/kestrel_box/main/counter/images/counter_pinout.png" alt="pinout. led is optional" title="pinout" width="360px" height="250px">
 
