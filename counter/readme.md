@@ -16,7 +16,7 @@ Using an esp32 board and a PIR sensor to detect entries on the kestral box. It c
 
 Solar power connected to a "pass-through charging" capable powerbank. 
 
-this is a v. 0.1 mockup. At some time you will want to solder everything together, neat and tidy, on a PCB board and enclose it in a box of some sort. Tupperware == ghett-o-ware. 
+this is a v. 0.1 mockup. At some time you will want to solder everything together, neat and tidy, on a PCB board and enclose it in a box of some sort.
 
 ### Requirements
 
