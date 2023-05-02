@@ -47,15 +47,15 @@ this is a v. 0.1 mockup. At some time you will want to solder everything togethe
 
 The pinout. I struggled with this. 
 
-<img src="https://raw.githubusercontent.com/grantiago/kestrel_box/main/counter/images/counter_pinout.png" alt="pinout. led is optional" title="pinout" width="360px" height="250px">
+<img src="https://raw.githubusercontent.com/grantiago/kestrel_box/main/counter/assets/counter_pinout.png" alt="pinout. led is optional" title="pinout" width="360px" height="250px">
 
 The working circuit.
 
-<img src="https://raw.githubusercontent.com/grantiago/kestrel_box/main/counter/images/working_circuit.jpg" alt="circuit" title="circuit" width="360px" height="250px">
+<img src="https://raw.githubusercontent.com/grantiago/kestrel_box/main/counter/assets/working_circuit.jpg" alt="circuit" title="circuit" width="360px" height="250px">
 
 The public facing webpage. The sensor values are arbitrary values I generated at random. A temp humidity sensor could easily be plugged in here. 
 
-<img src="https://raw.githubusercontent.com/grantiago/kestrel_box/main/counter/images/web_page.png" alt="web page" title="web page" width="360px" height="370px">
+<img src="https://raw.githubusercontent.com/grantiago/kestrel_box/main/counter/assets/web_page.png" alt="web page" title="web page" width="360px" height="370px">
 
 - [ ] todo ✔️
 - [ ] add a daily total to the webpage. for another day.
