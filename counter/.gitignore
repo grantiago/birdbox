@@ -1,0 +1,15 @@
+# API keys
+wifi_keys.h
+
+# not for this repo
+/birdbox
+gallery.php
+/images
+
+
+# the single file gallery
+index2.php
+_desc.txt
+/_sfpg_data
+readme.txt
+
