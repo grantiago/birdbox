@@ -1,11 +1,11 @@
 # API keys
 wifi_keys.h
+db.php
 
 # not for this repo
 /birdbox
 gallery.php
 /images
-
 
 # the single file gallery
 index2.php
