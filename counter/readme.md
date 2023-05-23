@@ -63,21 +63,40 @@ The public facing webpage. The sensor values are arbitrary values I generated at
 - [ ] add a temperature sensor 🌡️
 - [ ] add the camera module and http post upload
 - [ ] add a http gallery. 📷
+- [ ] divide by 2 the mysql daily query? It is counting both entry and exit. see below.
 
 ```
-mysql> SELECT     DATE(`reading_time`) AS 'day',  
-COUNT(*) AS 'number_of_entries', 
-location 
-FROM `SensorData` 
-GROUP BY DATE(`reading_time`);
-
+mysql> SELECT DATE(`reading_time`) AS 'day',
+  COUNT(*)  AS 'number_of_entries',
+  location FROM `SensorData`
+  GROUP BY DATE(`reading_time`);
 +------------+-------------------+-----------+
 | day        | number_of_entries | location  |
 +------------+-------------------+-----------+
-| 2023-05-01 |                55 | Office    |
+| 2023-05-01 |               152 | Office    |
 | 2023-04-29 |                 1 | hill road |
 | 2023-04-30 |                 2 | hill road |
+| 2023-05-02 |               122 | Office    |
+| 2023-05-03 |                68 | Office    |
+| 2023-05-23 |                55 | Office    |
 +------------+-------------------+-----------+
-3 rows in set (0.00 sec)
+6 rows in set (0.01 sec)
+
+Divided by 2:
+mysql> SELECT DATE(`reading_time`) AS 'day',
+COUNT(*) DIV 2  AS 'number_of_entries',
+location  FROM `SensorData`
+GROUP BY DATE(`reading_time`);
++------------+-------------------+-----------+
+| day        | number_of_entries | location  |
++------------+-------------------+-----------+
+| 2023-05-01 |                76 | Office    |
+| 2023-04-29 |                 0 | hill road |
+| 2023-04-30 |                 1 | hill road |
+| 2023-05-02 |                61 | Office    |
+| 2023-05-03 |                34 | Office    |
+| 2023-05-23 |                27 | Office    |
++------------+-------------------+-----------+
+6 rows in set (0.00 sec)
 
 ```
