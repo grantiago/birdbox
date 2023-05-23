@@ -58,12 +58,13 @@ The public facing webpage. The sensor values are arbitrary values I generated at
 <img src="https://raw.githubusercontent.com/grantiago/kestrel_box/main/counter/assets/web_page.png" alt="web page" title="web page" width="360px" height="370px">
 
 - [ ] todo ✔️
-- [ ] add a daily total to the webpage. for another day.
+- [x] add a daily total to the webpage. for another day.
 - [ ] graph it with highcharts 📈
 - [ ] add a temperature sensor 🌡️
 - [ ] add the camera module and http post upload
 - [ ] add a http gallery. 📷
 - [ ] divide by 2 the mysql daily query? It is counting both entry and exit. see below.
+- [ ] plot the data on (thingstalk.com)[https://thingspeak.com/channels/2160794/]
 
 ```
 mysql> SELECT DATE(`reading_time`) AS 'day',
