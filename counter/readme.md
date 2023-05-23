@@ -64,7 +64,7 @@ The public facing webpage. The sensor values are arbitrary values I generated at
 - [ ] add the camera module and http post upload
 - [ ] add a http gallery. 📷
 - [ ] divide by 2 the mysql daily query? It is counting both entry and exit. see below.
-- [ ] plot the data on (thingstalk.com)[https://thingspeak.com/channels/2160794/]
+- [ ] plot the data on [thingstalk.com](https://thingspeak.com/channels/2160794/)
 
 ```
 mysql> SELECT DATE(`reading_time`) AS 'day',
