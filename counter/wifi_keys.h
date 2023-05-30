@@ -5,3 +5,4 @@ const char* password = "myPass";
 //String serverPath = "/birdbox/upload.php";     // The default serverPath should be upload.php
 const int serverPort = 80;
 //const int serverPort = 443;
+String apiKeyValue = "randomkeyXX11yy";
