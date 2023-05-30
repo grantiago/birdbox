@@ -16,7 +16,7 @@ const char *ver = "0.1.1";
 const char* serverName = "http://grant.lan/birdbox/post_esp_data.php";
 
 // Keep this API Key value to be compatible with the PHP code provided in the project page.
-// If you change the apiKeyValue value, the PHP file /post_esp_data.php also needs to have the same key
+//  change this apiKeyValue and in the file /post_esp_data.php -> same key ==
 String apiKeyValue = "tPmAT5Ab3j7F9";
 
 unsigned long previousMillis = 0;
