@@ -31,11 +31,11 @@ this is a v. 0.1 mockup. At some time you will want to solder everything togethe
 * FDDI adapter $9
 * PIR sensor $9
 * Solar Panel [amazon quick search](<https://www.amazon.com/dp/B09CYWCCCY/ref=vp_d_ac_d_vp_sub_hr_lb_reg_pd?_encoding=UTF8&th=1>) $23
-* Power Bank [amazon](https://www.amazon.com/EnergyQC-Pilot-X7-Portable-Flashlight/dp/B09Z6R1TZG/?_encoding=UTF8&th=1) $24 Has to be capable of charging and discharging simultaniously.
+* Power Bank [amazon]([https://www.amazon.com/EnergyQC-Pilot-X7-Portable-Flashlight/dp/B09Z6R1TZG/?_encoding=UTF8&th=1](https://www.amazon.com/Voltaic-Systems-Formerly-Battery-Samsung/dp/B07ZS3WYZY?ref_=ast_sto_dp&th=1&psc=1)) $44 Has to be capable of charging and discharging simultaniously and always on feature.
 * jumpers
 * resistor
 
-    total: ~$74
+    total: ~$94
 
 ### files
 
